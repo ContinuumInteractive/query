@@ -14,7 +14,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Continuum\\Filter\\": "src/"
+            "Continuum\\Query\\": "src/"
         }
     },
     "license": "MIT",
