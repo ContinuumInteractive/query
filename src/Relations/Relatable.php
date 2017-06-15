@@ -12,7 +12,7 @@ trait Relatable
      */
     public function scopeLoadRelations($query, $with = [])
     {
-        if (property_exists($this, 'relationsToLoad')) {
+        if (property_exists($this, 'relationsToLoad') || !empty($with)) {
             return $query->with(array_merge($this->relationsToLoad, $with));
         }
 
